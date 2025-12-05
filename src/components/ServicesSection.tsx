@@ -1,5 +1,6 @@
 import { Sparkles, Smile, Shield, Stethoscope, Zap, Baby } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -93,9 +94,11 @@ const ServicesSection = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <Button variant="hero" size="lg">
-            View All Services
-          </Button>
+          <Link to="/services">
+            <Button variant="hero" size="lg">
+              View All Services
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

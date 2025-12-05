@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
@@ -118,6 +120,15 @@ const TestimonialsSection = () => {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
+          </div>
+
+          {/* View All Button */}
+          <div className="text-center mt-8">
+            <Link to="/testimonials">
+              <Button variant="outline" size="lg">
+                View All Testimonials
+              </Button>
+            </Link>
           </div>
         </div>
 
