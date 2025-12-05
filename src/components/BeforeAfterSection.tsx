@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const transformations = [
   {
@@ -31,16 +31,24 @@ const transformations = [
 const BeforeAfterSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sliderPosition, setSliderPosition] = useState(50);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const nextCase = () => {
+  const nextCase = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % transformations.length);
     setSliderPosition(50);
-  };
+  }, []);
 
   const prevCase = () => {
     setCurrentIndex((prev) => (prev - 1 + transformations.length) % transformations.length);
     setSliderPosition(50);
   };
+
+  // Auto-slide effect
+  useEffect(() => {
+    if (!isPlaying) return;
+    const interval = setInterval(nextCase, 5000);
+    return () => clearInterval(interval);
+  }, [isPlaying, nextCase]);
 
   const current = transformations[currentIndex];
 
@@ -167,6 +175,14 @@ const BeforeAfterSection = () => {
               aria-label="Next case"
             >
               <ChevronRight className="w-5 h-5 text-foreground" />
+            </button>
+
+            <button
+              onClick={() => setIsPlaying(!isPlaying)}
+              className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary/90 transition-colors shadow-md"
+              aria-label={isPlaying ? "Pause slideshow" : "Play slideshow"}
+            >
+              {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
             </button>
           </div>
         </div>
