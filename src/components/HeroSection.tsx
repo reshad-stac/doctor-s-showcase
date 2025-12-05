@@ -3,7 +3,7 @@ import { Calendar, Star, Award, Users } from "lucide-react";
 
 const stats = [
   { icon: Users, value: "15,000+", label: "Happy Patients" },
-  { icon: Award, value: "20+", label: "Years Experience" },
+  { icon: Award, value: "15+", label: "Years Experience" },
   { icon: Star, value: "4.9", label: "Patient Rating" },
 ];
 
@@ -22,17 +22,18 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Star className="w-4 h-4 fill-current" />
-              <span>Award-Winning Dental Care</span>
+              <span>Expert Dental Care in Cumilla</span>
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Your Smile,{" "}
-              <span className="text-gradient">Our Passion</span>
+              <span className="text-gradient">Our Expertise</span>
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Experience exceptional dental care with Dr. Sarah Mitchell. We combine advanced technology 
-              with compassionate care to give you the confident, healthy smile you deserve.
+              Experience exceptional dental care with Dr. Md. Ajahel Islam (Mitul). Specialized in 
+              Oral & Maxillofacial Surgery with advanced training from Thailand, delivering world-class 
+              dental solutions at Medinova Medical Services Ltd., Cumilla.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -68,7 +69,7 @@ const HeroSection = () => {
               <div className="relative w-full h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Modern dental clinic interior"
+                  alt="Dr. Ajahel Islam - Modern dental clinic in Cumilla"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent" />
@@ -81,8 +82,8 @@ const HeroSection = () => {
                     <Award className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Board Certified</p>
-                    <p className="text-sm text-muted-foreground">ADA Member</p>
+                    <p className="font-semibold text-foreground">BMDC Certified</p>
+                    <p className="text-sm text-muted-foreground">Reg. #6330</p>
                   </div>
                 </div>
               </div>

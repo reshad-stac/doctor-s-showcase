@@ -12,16 +12,16 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">DS</span>
+                <span className="text-primary-foreground font-display font-bold text-xl">AI</span>
               </div>
               <div>
-                <p className="font-display font-semibold text-lg">Dr. Sarah Mitchell</p>
-                <p className="text-sm opacity-80">DDS, FAGD</p>
+                <p className="font-display font-semibold text-lg">Dr. Ajahel Islam</p>
+                <p className="text-sm opacity-80">BDS, PGT (DDCH)</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Providing exceptional dental care with a gentle touch. Your smile is our passion, 
-              and your comfort is our priority.
+              Providing exceptional dental care with a gentle touch at Medinova Medical Services Ltd., 
+              Cumilla. Your smile is our passion, and your comfort is our priority.
             </p>
             <div className="flex items-center gap-4">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, index) => (
@@ -41,7 +41,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-semibold text-lg mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["About Dr. Mitchell", "Our Services", "Patient Resources", "Insurance & Payment", "Before & After", "Blog"].map(
+              {["About Dr. Ajahel", "Our Services", "Patient Resources", "Before & After", "Testimonials", "Contact"].map(
                 (link, index) => (
                   <li key={index}>
                     <a
@@ -61,12 +61,12 @@ const Footer = () => {
             <h3 className="font-display font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
               {[
+                "Oral & Maxillofacial Surgery",
+                "Advanced Endodontics",
+                "Dental Implants",
                 "Cosmetic Dentistry",
                 "Preventive Care",
-                "Dental Implants",
-                "Invisalign",
                 "Emergency Care",
-                "Family Dentistry",
               ].map((service, index) => (
                 <li key={index}>
                   <a
@@ -87,20 +87,25 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm opacity-80">
-                  123 Dental Care Boulevard<br />
-                  Suite 200, New York, NY 10001
+                  Medinova Medical Services Ltd.<br />
+                  Laxmipur Road, Cumilla
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  (123) 456-7890
-                </a>
+                <div className="text-sm opacity-80">
+                  <a href="tel:+8801719454545" className="hover:opacity-100 hover:text-primary transition-colors block">
+                    01719-454545
+                  </a>
+                  <a href="tel:+8801337283788" className="hover:opacity-100 hover:text-primary transition-colors block">
+                    01337-283788
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@drmitchell.com" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  info@drmitchell.com
+                <a href="mailto:info@drajahel.com" className="text-sm opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  info@drajahel.com
                 </a>
               </li>
             </ul>
@@ -113,7 +118,7 @@ const Footer = () => {
         <div className="container-max px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-70">
-              © {currentYear} Dr. Sarah Mitchell, DDS. All rights reserved.
+              © {currentYear} Dr. Md. Ajahel Islam (Mitul), BDS. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {["Privacy Policy", "Terms of Service", "Accessibility"].map((link, index) => (

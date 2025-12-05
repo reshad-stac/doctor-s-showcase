@@ -1,15 +1,17 @@
 import { GraduationCap, Award, Heart, CheckCircle } from "lucide-react";
 
 const credentials = [
-  "Doctor of Dental Surgery (DDS) - Columbia University",
-  "Fellow, Academy of General Dentistry (FAGD)",
-  "American Dental Association Member",
-  "Invisalign Certified Provider",
+  "BDS (Dhaka University)",
+  "PGT (DDCH) - Post Graduate Training",
+  "Advanced Training in Oral & Maxillofacial Surgery",
+  "PGT (COMCH), Dentistry",
+  "Fellowship in Advanced Endodontics (Thailand)",
+  "BMDC Registration Number: 6330",
 ];
 
 const values = [
   { icon: Heart, title: "Patient-Centered", desc: "Your comfort and needs always come first" },
-  { icon: GraduationCap, title: "Continuous Learning", desc: "Staying current with latest techniques" },
+  { icon: GraduationCap, title: "Advanced Training", desc: "International fellowship from Thailand" },
   { icon: Award, title: "Excellence", desc: "Committed to the highest standards of care" },
 ];
 
@@ -23,7 +25,7 @@ const AboutSection = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Dr. Sarah Mitchell - Professional dental doctor"
+                alt="Dr. Md. Ajahel Islam (Mitul) - Professional dental surgeon in Cumilla"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent" />
@@ -31,7 +33,7 @@ const AboutSection = () => {
 
             {/* Experience badge */}
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground rounded-2xl p-6 shadow-xl">
-              <p className="font-display text-4xl font-bold">20+</p>
+              <p className="font-display text-4xl font-bold">15+</p>
               <p className="text-sm opacity-90">Years of Experience</p>
             </div>
 
@@ -44,12 +46,17 @@ const AboutSection = () => {
             <div>
               <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">About Me</p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                Dedicated to Creating Beautiful, Healthy Smiles
+                Dr. Md. Ajahel Islam (Mitul)
               </h2>
+              <p className="text-lg text-primary font-medium mb-4">
+                Dentist & Dental Surgeon | Oral & Dental Specialist
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                With over two decades of experience in comprehensive dental care, I've dedicated my career 
-                to helping patients achieve optimal oral health while creating stunning, natural-looking smiles. 
-                My approach combines the latest dental technology with a gentle, patient-focused philosophy.
+                With over 15 years of experience in comprehensive dental care, I have dedicated my career 
+                to helping patients achieve optimal oral health. My advanced training in Oral & Maxillofacial 
+                Surgery and Fellowship in Advanced Endodontics from Thailand enables me to provide world-class 
+                dental solutions right here in Cumilla. I believe in combining the latest dental technology 
+                with a gentle, patient-focused approach.
               </p>
             </div>
 
@@ -57,7 +64,7 @@ const AboutSection = () => {
             <div className="space-y-3">
               <h3 className="font-semibold text-foreground flex items-center gap-2">
                 <GraduationCap className="w-5 h-5 text-primary" />
-                Credentials & Certifications
+                Qualifications & Certifications
               </h3>
               <ul className="space-y-2">
                 {credentials.map((credential, index) => (

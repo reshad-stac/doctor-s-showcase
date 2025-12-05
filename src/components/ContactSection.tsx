@@ -5,23 +5,27 @@ import { useState } from "react";
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Visit Our Office",
-    details: ["123 Dental Care Boulevard", "Suite 200, New York, NY 10001"],
+    title: "Visit Our Chamber",
+    details: ["Medinova Medical Services Ltd.", "Laxmipur Road, Cumilla"],
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["(123) 456-7890", "Emergency: (123) 456-7899"],
+    details: ["01719-454545", "01337-283788"],
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["appointments@drmitchell.com", "info@drmitchell.com"],
+    details: ["appointments@drajahel.com", "info@drajahel.com"],
   },
   {
     icon: Clock,
-    title: "Office Hours",
-    details: ["Mon - Fri: 8:00 AM - 6:00 PM", "Sat: 9:00 AM - 3:00 PM"],
+    title: "Consulting Hours",
+    details: [
+      "Regular: 10:00 AM - 01:00 PM",
+      "Evening: 07:00 PM - 10:00 PM",
+      "Friday & Holidays: 10:30 AM - 08:30 PM",
+    ],
   },
 ];
 
@@ -51,7 +55,7 @@ const ContactSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg">
             Ready to start your journey to a healthier smile? Contact us today to schedule 
-            your consultation with Dr. Mitchell.
+            your consultation with Dr. Ajahel Islam at Medinova Medical Services Ltd., Cumilla.
           </p>
         </div>
 
@@ -99,7 +103,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     required
                   />
                 </div>
@@ -113,7 +117,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="your@email.com"
                     required
                   />
                 </div>
@@ -130,7 +134,7 @@ const ContactSection = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
-                    placeholder="(123) 456-7890"
+                    placeholder="01XXX-XXXXXX"
                   />
                 </div>
                 <div>
@@ -144,10 +148,11 @@ const ContactSection = () => {
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                   >
                     <option value="">Select a service</option>
+                    <option value="oral-surgery">Oral & Maxillofacial Surgery</option>
+                    <option value="endodontics">Root Canal Treatment</option>
                     <option value="cosmetic">Cosmetic Dentistry</option>
+                    <option value="implants">Dental Implants</option>
                     <option value="preventive">Preventive Care</option>
-                    <option value="restorative">Restorative Dentistry</option>
-                    <option value="invisalign">Invisalign</option>
                     <option value="emergency">Emergency Care</option>
                     <option value="other">Other</option>
                   </select>
