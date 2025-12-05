@@ -2,46 +2,46 @@ import { Linkedin, Mail } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Mitchell",
-    role: "Lead Dentist & Founder",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "20+ years of experience in cosmetic and restorative dentistry. Harvard School of Dental Medicine graduate.",
-    specialties: ["Cosmetic Dentistry", "Implants", "Smile Design"],
-  },
-  {
-    name: "Dr. James Anderson",
-    role: "Orthodontist",
+    name: "Dr. Md. Ajahel Islam (Mitul)",
+    role: "Lead Dentist & Oral Surgeon",
     image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "Certified Invisalign provider with expertise in both traditional braces and clear aligners.",
-    specialties: ["Invisalign", "Braces", "Jaw Alignment"],
+    bio: "15+ years of experience with BDS from Dhaka University. Fellowship in Advanced Endodontics from Thailand. BMDC Reg. #6330.",
+    specialties: ["Oral Surgery", "Endodontics", "Implants"],
   },
   {
-    name: "Dr. Emily Chen",
-    role: "Pediatric Dentist",
+    name: "Dr. Fatima Rahman",
+    role: "Associate Dentist",
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "Specialized in children's dentistry with a gentle approach that makes kids love visiting the dentist.",
-    specialties: ["Pediatric Care", "Preventive Dentistry", "Sedation"],
+    bio: "Specialized in cosmetic dentistry and smile makeovers with a gentle, patient-focused approach.",
+    specialties: ["Cosmetic Dentistry", "Veneers", "Whitening"],
   },
   {
-    name: "Dr. Michael Roberts",
-    role: "Oral Surgeon",
+    name: "Dr. Karim Ahmed",
+    role: "Orthodontist",
     image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "Board-certified oral surgeon specializing in dental implants and complex extractions.",
-    specialties: ["Oral Surgery", "Implants", "Wisdom Teeth"],
+    bio: "Expert in teeth alignment and corrective procedures. Certified in both traditional braces and modern aligners.",
+    specialties: ["Braces", "Aligners", "Jaw Correction"],
   },
   {
-    name: "Lisa Thompson",
-    role: "Dental Hygienist",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "15 years of experience providing thorough cleanings and patient education on oral health.",
-    specialties: ["Deep Cleaning", "Periodontal Care", "Patient Education"],
+    name: "Nurse Sharmin Akter",
+    role: "Senior Dental Nurse",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    bio: "10+ years of experience in dental assistance. Ensures patient comfort and smooth clinical operations.",
+    specialties: ["Patient Care", "Sterilization", "Assistance"],
   },
   {
-    name: "Maria Garcia",
-    role: "Office Manager",
+    name: "Rahim Uddin",
+    role: "Dental Technician",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    bio: "Skilled in dental lab work including crowns, bridges, and dentures with precision craftsmanship.",
+    specialties: ["Crowns", "Bridges", "Dentures"],
+  },
+  {
+    name: "Nasreen Begum",
+    role: "Front Desk Coordinator",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    bio: "Ensures smooth operations and exceptional patient experience from scheduling to billing.",
-    specialties: ["Scheduling", "Insurance", "Patient Care"],
+    bio: "Manages appointments and patient relations. Ensures a welcoming experience from your first call.",
+    specialties: ["Scheduling", "Patient Relations", "Administration"],
   },
 ];
 
@@ -56,7 +56,8 @@ const TeamSection = () => {
             Meet Our Expert Team
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our dedicated team of dental professionals is committed to providing you with the highest quality care in a comfortable environment.
+            Our dedicated team at Medinova Medical Services Ltd. is committed to providing you with 
+            the highest quality dental care in a comfortable and welcoming environment.
           </p>
         </div>
 

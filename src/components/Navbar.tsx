@@ -6,6 +6,7 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
+  { name: "Team", href: "#team" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
@@ -35,13 +36,13 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">DS</span>
+              <span className="text-primary-foreground font-display font-bold text-lg">AI</span>
             </div>
             <div className="hidden sm:block">
               <p className="font-display font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-                Dr. Sarah Mitchell
+                Dr. Ajahel Islam
               </p>
-              <p className="text-xs text-muted-foreground">DDS, FAGD</p>
+              <p className="text-xs text-muted-foreground">BDS, PGT (DDCH)</p>
             </div>
           </a>
 
@@ -60,9 +61,9 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+8801719454545" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span>(123) 456-7890</span>
+              <span>01719-454545</span>
             </a>
             <Button variant="hero" size="default">
               Book Appointment
